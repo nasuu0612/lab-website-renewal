@@ -16,3 +16,4 @@
   
 ## 公開URL
 http://www.vip.csse.yamaguchi-u.ac.jp/index.html
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/dc1e1262-050d-4670-832a-37dadbf67c4a" />
