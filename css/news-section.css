@@ -1,0 +1,37 @@
+#news-section{
+    background-color: var(--white);
+    color: var(--dark-navy);
+}
+
+#news-html dl {
+  margin: 0;
+  align-items: start;
+}
+
+#news-html dt {
+  background-color: var(--dark-navy);
+  color: var(--white);
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  width: fit-content;
+  margin: 5px 0;
+}
+
+#news-html dd {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #news-section{
+    height: 60vh;
+  }
+}
+
+@media(min-width: 769px){
+  #news-html dl {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 12px 16px;
+  }
+}

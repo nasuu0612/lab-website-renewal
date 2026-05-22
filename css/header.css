@@ -1,0 +1,40 @@
+header{
+    background-color: var(--white);
+    color: var(--bright-navy);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1000;
+
+
+}
+
+@media (max-width: 768px) {
+  header {
+    display: none;
+  }
+}
+
+header a{
+    color: var(--bright-navy);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+
+    margin: 0 10px;
+
+}
+header a:visited {
+    color: var(--bright-navy); /* 訪問済みリンクの色 */
+  }
+  
+header a:hover {
+    color: var(--dark-navy); /* ホバー時（マウスを乗せたとき）の色 */
+  }

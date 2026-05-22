@@ -1,0 +1,36 @@
+#contact-section{
+    background-color: var(--bright-navy);
+    color: var(--white);
+    height: fit-content;
+}
+
+#contact-section a{
+    color: var(--white);
+}
+
+#contact-section a:hover{
+    color: var(--dark-navy);
+}
+#contact-section a:visited{
+    color: var(--dark-navy);
+}
+
+#contact-contents{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5vh;
+
+    width: 80vw;
+    margin: 0 auto 5vh auto;
+}
+
+#contact-grid1{
+    grid-column: 1 / 3;
+    
+}
+@media (max-width: 768px) {
+    #contact-contents{
+        font-size: 14px;
+    }
+}
+

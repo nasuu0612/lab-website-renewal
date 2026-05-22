@@ -1,0 +1,38 @@
+#research-section{
+    background-color: var(--bright-navy);
+    color: var(--white);
+    height: auto;
+}
+
+#research-section #section-contents{
+    padding: 0;
+}
+
+#research-content{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#research-content video,
+#research-content img{
+    width: 60%;
+    max-width: 80vw;
+    height: auto;
+    max-height: 90vh;
+}
+
+#research-content p{
+    margin: 2.5% 10%;
+    color: var(--white);
+    
+}
+
+@media (max-width: 768px) {
+    #research-section{
+        font-size: 16px;
+    }
+    #research-content video,
+    #research-content img{
+        width: 80%;
+    }
+}

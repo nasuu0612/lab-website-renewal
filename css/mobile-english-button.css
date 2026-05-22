@@ -1,0 +1,24 @@
+#mobile-english-button{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #mobile-english-button{
+        z-index: 2000;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        display: block;
+    }
+
+    #mobile-english-button a{
+        display: inline-block;
+
+        padding: 10px 10px;
+        background-color: color-mix(in srgb, var(--white) 70%, transparent);
+        color: var(--dark-navy);
+        border-radius: 100px;
+        font-weight: 600;
+        font-size: 8px;
+    }
+}

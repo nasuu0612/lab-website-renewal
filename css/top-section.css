@@ -1,0 +1,119 @@
+#top-section{
+    background-color: var(--bright-navy);
+    background-image: url('../img/top-section.jpg');
+    background-size: cover;
+    background-position: center;
+
+    color: var(--white);
+
+}
+
+#top-contents{
+    display: flex;
+    align-items: center;
+}
+
+#top-text-content {
+    margin-left: 5%;
+}
+
+#top-text-content h1{
+    font-size: 350%;
+    font-weight: 700;
+    margin: 0;
+}
+
+#top-text-content h3{
+    font-size: 150%;
+    font-weight: 600;
+    margin: 0;
+}
+
+#top-profile-contents{
+    width: 25vw;
+    height: auto;
+    padding: 20px;
+    background-color: rgba(225, 225, 225, 0.8);
+    border-radius: 10px;
+    color: var(--dark-navy);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#profile-name{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#profile-name p{
+    margin: 0;
+}
+
+#profile-urls{
+    word-break: break-word;
+}
+
+
+@media (max-width: 768px) {
+    #top-section{
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        display: flex;
+        height: fit-content;
+        padding: 10px 0;
+    }
+    #top-contents {
+        flex-direction: column;
+        flex: 1; /* 親の高さを全部使う */
+        justify-content: center;
+    }
+
+    #top-text-content{
+        margin: 10px auto 10px auto;
+        text-align: center;
+        
+    }
+
+    #top-text-content h1{
+        font-size: 250%;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    #top-text-content h3{
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    #top-profile-contents{
+        padding: 10px;
+        width: 70%; 
+        height: fit-content; 
+        font-size: 14px;
+
+    }
+    #top-profile-contents p{
+        margin: 0;
+    }
+    #profile-urls{
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 769px){
+    #top-section{
+        display: flex;
+        justify-content: flex-end;
+    }
+    #top-contents{
+        grid-row: 2;
+        justify-content: space-between;
+    }
+    #top-profile-contents{
+        margin-bottom: 15px;
+        margin-right: 15px;
+    }
+}

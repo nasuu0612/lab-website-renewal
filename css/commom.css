@@ -1,0 +1,100 @@
+:root {
+  --white: #FFFFFF;
+  --black: #000000;
+  --bright-navy: #5E7590;
+  --dark-navy: #183A60;
+
+  --header-height: 50px;
+  /**ヘッダーの高さ**/
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+}
+
+body {
+  margin: 0;
+
+}
+
+main {
+  margin-top: var(--header-height);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  scroll-margin-top: var(--header-height);
+  height: 600px;
+}
+
+a {
+  color: var(--dark-navy);
+  /* 通常時のリンク色 */
+}
+
+a:visited {
+  color: var(--bright-navy);
+  /* 訪問済みリンクの色 */
+}
+
+a:hover {
+  color: var(--bright-navy);
+  /* ホバー時（マウスを乗せたとき）の色 */
+}
+
+#section-header {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  /* 横中央 */
+  align-items: center;
+  font-size: 20px;
+}
+
+#section-contents {
+  flex: 1;
+  padding: 0 15vw 5vh 15vw;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  /* 枠線消す */
+}
+
+/* 1024px以上なら */
+@media (min-width: 1024px) {
+  section {
+    /**headerの高さ分を引いてsectionの高さをｐｃに合わせた*/
+    height: calc(100vh - var(--header-height));
+  }
+}
+
+@media (max-width: 768px) {
+  body, p, dd{
+    font-size: 14px;
+  }
+
+  main {
+    margin-top: 0;
+  }
+
+  section {
+    height: 300px;
+    /*scroll-margin-top: 0;*/
+  }
+
+  #section-header {
+    height: 10vh;
+    font-size: 14px;
+  }
+
+  #section-contents {
+    padding: 0 10vw 3vh 10vw;
+  }
+
+}

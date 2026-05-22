@@ -1,0 +1,48 @@
+
+#achievements-section{
+    background-color: var(--white);
+    text-align: center;
+    font-size: 16px;
+}
+
+#achievements-section #section-header{
+    color: var(--dark-navy);
+}
+
+#achievements-section p{
+    margin: 0 0 3vh 0;
+}
+
+
+/*ここからachievements.html*/
+#achievements{
+    font-size: 16px;
+}
+
+#achievements .box {
+    display: inline-block;
+    background-color: var(--dark-navy); 
+    color: var(--white);
+    padding: 8px 12px;
+    border-radius: 10px; /* 角丸 */
+    width: fit-content;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+
+#achievements dd {
+    margin-left: 0;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  #achievements-section{
+    height: 70vh;
+    font-size: 14px;
+    
+  }
+  #achievements{
+    font-size: 12px;
+  }
+}
